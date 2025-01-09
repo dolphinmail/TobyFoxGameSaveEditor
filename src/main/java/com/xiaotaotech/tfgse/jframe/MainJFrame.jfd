@@ -1,0 +1,132 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "17.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "hidemode 3"
+			"$columnConstraints": "[fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill]"
+			"$rowConstraints": "[][][][][][][][][][][]"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbName"
+				"text": "玩家名"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 1"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtName"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 2 1,wmin 100,hmin 20"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnSetGoods"
+				"text": "物品栏装满顶级蛋糕"
+				"actionCommand": "text"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSetGoods", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 3 1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbMoney"
+				"text": "金钱"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 2"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtMoney"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 2 2"
+			} )
+			add( new FormContainer( "javax.swing.JInternalFrame", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+				"$layoutConstraints": "hidemode 3"
+				"$columnConstraints": "[fill][fill][fill]"
+				"$rowConstraints": "[][][][][]"
+			} ) {
+				name: "internalFrame1"
+				"border": new javax.swing.border.TitledBorder( "text" )
+				"visible": true
+				"frameIcon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbName2"
+					"text": "血量"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 0"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txtHP"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 2 0,wmin 100,hmin 20"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbname3"
+					"text": "最大血量"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 1"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txtMaxHP"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 2 1,wmin 100,hmin 20"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbname4"
+					"text": "攻击"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 2"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txtAT"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 2 2,wmin 100,hmin 20"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbname5"
+					"text": "防御"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 3"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txtDF"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 2 3,wmin 100,hmin 20"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbname6"
+					"text": "魔力"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 4"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txtMagic"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 2 4,wmin 100,hmin 20"
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 3 9 7"
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "file"
+					"text": "文件"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "openFile"
+						"text": "打开filech1"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "openFile", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "saveFile"
+						"text": "保存"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "saveFile", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 405 )
+		} )
+	}
+}
